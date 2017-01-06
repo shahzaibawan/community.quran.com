@@ -1,5 +1,6 @@
 ActiveAdmin.register Verse do
-  menu parent: "Quran", priority: 1
+  menu parent: "Quran", priority: 2
+
   actions :all, except: [:destroy, :new]
 
   filter :chapter_id
