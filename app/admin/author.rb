@@ -1,6 +1,6 @@
 ActiveAdmin.register Author do
   menu parent: "Settings"
-
+  ActiveAdminViewHelpers.render_translated_name_sidebar(self)
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

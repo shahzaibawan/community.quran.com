@@ -1,18 +1,19 @@
 ActiveAdmin.register TranslatedName do
   menu parent: "Settings"
+  actions :all, except: :new
 
-# See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
-# permit_params :list, :of, :attributes, :on, :model
-#
-# or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
-#   permitted << :other if params[:action] == 'create' && current_user.admin?
-#   permitted
-# end
+  permit_params do
+    [:resource_type, :resource_id, :name, :language_id]
+  end
 
-
+  form do |f|
+    f.inputs do
+    f.input :resource_id, as: :hidden
+    f.input :resource_type, as: :hidden
+    f.input :name, required: true
+    f.input :language, required: true
+    end
+    f.actions
+  end
 end
+

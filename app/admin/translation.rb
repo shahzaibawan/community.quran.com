@@ -32,4 +32,8 @@ ActiveAdmin.register Translation do
   def scoped_collection
     super.includes :language # prevents N+1 queries to your database
   end
+
+  permit_params do
+    [:language_id, :resource_type, :resource_id, :text]
+  end
 end
