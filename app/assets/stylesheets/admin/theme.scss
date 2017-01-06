@@ -1,10 +1,15 @@
 #site_title{
-  .small{
-    color: #9d261d;
+  small{
+    color: #2CA4AB;
     font-weight: bold;
   }
 }
 
-.scroll-table{
+.scrollable{
  overflow: scroll;
+  td{
+    padding: 8px 12px 6px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #e8e8e8;
+  }
 }

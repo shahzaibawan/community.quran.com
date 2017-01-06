@@ -1,18 +1,34 @@
 ActiveAdmin.register ChapterInfo do
   menu parent: "Content", priority: 3
 
-# See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
-# permit_params :list, :of, :attributes, :on, :model
-#
-# or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
-#   permitted << :other if params[:action] == 'create' && current_user.admin?
-#   permitted
-# end
+  filter :chapter, as: :select, collection: 1..114
+  filter :language
 
+  index do
+    column :id do |resource|
+      link_to(resource.id, [:admin, resource])
+    end
 
+    column :language do |resource|
+      link_to resource.language_name, admin_language_path(resource.language_id) if resource.language_id
+    end
+
+    column :chapter do |resource|
+      link_to resource.chapter_id, admin_chapter_path(resource.chapter_id)
+    end
+
+    actions
+  end
+
+  show do
+    attributes_table do
+      row :id
+      row :chapter do |object|
+        link_to object.chapter_id, admin_chapter_path(object.chapter)
+      end
+      row :text do |resource| resource.text.to_s.html_safe end
+      row :short_text
+      row :language
+    end
+  end
 end

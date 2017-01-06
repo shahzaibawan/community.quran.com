@@ -1,18 +1,35 @@
 ActiveAdmin.register Translation do
   menu parent: "Content"
 
-# See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
-# permit_params :list, :of, :attributes, :on, :model
-#
-# or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
-#   permitted << :other if params[:action] == 'create' && current_user.admin?
-#   permitted
-# end
+  filter :language
+  filter :resource_type, as: :select, collection: ['Verse', 'Word']
+  filter :resource_id
 
+  index do
+    column :id do |resource|
+      link_to(resource.id, [:admin, resource])
+    end
+    column :language do |resource|
+      resource.language_name
+    end
+    column :resource_type
+    column :resource_id do |resource| resource.resource_id end
+    actions
+  end
 
+  show do
+    attributes_table do
+      row :id
+      row :resource
+      row :text do |resource|
+        div class: resource.language_name.to_s.downcase do
+          resource.text
+        end
+      end
+    end
+  end
+
+  def scoped_collection
+    super.includes :language # prevents N+1 queries to your database
+  end
 end

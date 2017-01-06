@@ -14,5 +14,27 @@ ActiveAdmin.register Language do
 #   permitted
 # end
 
+  sidebar "Translated names", only: :show do
+    div do
+      #TODO: add form here for adding new name
+    end
 
+    table do
+      thead do
+        td :id
+        td :language
+        td :name
+      end
+
+      tbody do
+        language.translated_names.each do |translated_name|
+         tr do
+           td link_to(translated_name.id, [:admin, translated_name])
+           td translated_name.language_name
+           td translated_name.name
+         end
+        end
+      end
+    end
+  end
 end

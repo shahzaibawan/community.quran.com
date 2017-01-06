@@ -1,4 +1,4 @@
-ActiveAdmin.register Author do
+ActiveAdmin.register DataSource do
   menu parent: "Settings"
 
 # See permitted parameters documentation:

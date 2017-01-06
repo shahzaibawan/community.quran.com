@@ -77,8 +77,8 @@ ActiveAdmin.register Verse do
       end
     end
 
-    panel "Translations" do
-      table class: 'scroll-table' do
+    panel "Translations", class: 'scrollable' do
+      table do
         thead do
           td "ID"
           td "Language"
