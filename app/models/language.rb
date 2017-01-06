@@ -1,0 +1,2 @@
+class Language < QuranApiRecord
+end

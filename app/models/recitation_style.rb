@@ -1,0 +1,2 @@
+class RecitationStyle < QuranApiRecord
+end

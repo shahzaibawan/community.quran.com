@@ -1,0 +1,3 @@
+class ResourceContent < QuranApiRecord
+
+end

@@ -1,0 +1,2 @@
+class Reciter < QuranApiRecord
+end

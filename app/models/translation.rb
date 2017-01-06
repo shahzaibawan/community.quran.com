@@ -1,0 +1,2 @@
+class Translation < QuranApiRecord
+end

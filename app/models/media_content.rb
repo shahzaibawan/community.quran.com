@@ -1,0 +1,2 @@
+class MediaContent < QuranApiRecord
+end

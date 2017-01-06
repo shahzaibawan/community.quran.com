@@ -1,0 +1,2 @@
+class CharType < QuranApiRecord
+end

@@ -1,0 +1,2 @@
+class FootNote < QuranApiRecord
+end
