@@ -1,0 +1,15 @@
+#site_title{
+  small{
+    color: #2CA4AB;
+    font-weight: bold;
+  }
+}
+
+.scrollable{
+ overflow: scroll;
+  td{
+    padding: 8px 12px 6px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}

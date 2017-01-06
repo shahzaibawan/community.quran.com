@@ -14,6 +14,16 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+quran_api_db:
+  adapter: postgresql
+  encoding: unicode
+  database: quran_dev
+  host: 'localhost'
+  database: quran_dev
+  username: quran_dev
+  password: dev_quran
+  schema_search_path: quran,"$user",public
+
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -26,12 +36,10 @@ default: &default
 
 development:
   <<: *default
-  #database: quran_dev_lite
-  #host: dev.quran.com
 
 test:
   <<: *default
-  database: quran_dev
+  database: quran_community
 
 production:
   <<: *default
