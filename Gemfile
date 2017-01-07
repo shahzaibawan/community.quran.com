@@ -36,6 +36,9 @@ gem 'paper_trail'
 #authentication
 gem 'devise'
 
+#exception tracking
+gem "sentry-raven"
+
 # Generate embed code and get metadata of video etc
 gem 'video_info'
 
