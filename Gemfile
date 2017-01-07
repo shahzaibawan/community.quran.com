@@ -35,7 +35,6 @@ gem 'paper_trail'
 
 #authentication
 gem 'devise'
-gem 'secondbase'
 
 # Generate embed code and get metadata of video etc
 gem 'video_info'
