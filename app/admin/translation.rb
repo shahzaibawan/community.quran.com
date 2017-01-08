@@ -26,6 +26,7 @@ ActiveAdmin.register Translation do
           resource.text
         end
       end
+      row :resource_content
     end
   end
 

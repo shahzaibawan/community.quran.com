@@ -3,6 +3,9 @@ ActiveAdmin.register ResourceContent do
 
   filter :cardinality_type
   filter :approved
+  filter :language
+  filter :resource_type
+  filter :sub_type
 
   index do
     column :id do |resource|

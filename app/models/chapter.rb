@@ -4,4 +4,6 @@ class Chapter < QuranApiRecord
   has_many :chapter_infos
 
   serialize :pages
+
+  alias_method :name, :id
 end

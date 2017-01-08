@@ -103,7 +103,24 @@ ActiveAdmin.register Verse do
   end
 
   sidebar "Media content", only: :show do
+   table do
+     thead do
+       td :id
+       td :language
+       td :author
+       td :language
+     end
 
+     tbody do
+       resource.media_contents.each do |c|
+         tr do
+           td link_to(c.id, [:admin, c])
+           td c.language_name
+           td c.resource_content.author_name
+         end
+       end
+     end
+   end
   end
 
   sidebar "Tafsirs", only: :show do
@@ -111,6 +128,6 @@ ActiveAdmin.register Verse do
   end
 
   def scoped_collection
-    super.includes :chapter # prevents N+1 queries to your database
+    super.includes :chapter, :translations, :audio_files # prevents N+1 queries to your database
   end
 end
