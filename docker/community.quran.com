@@ -13,5 +13,8 @@ server {
     passenger_max_request_queue_size 200;
     root   /home/app/community/public;
     index  index.html index.htm;
+
+    add_header Cache-Control "public";
+    expires 1y;
   }
 }
