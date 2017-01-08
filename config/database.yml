@@ -49,4 +49,4 @@ production:
 #  database: quran_production
 #  username: quran
 #  password: <%= ENV['QURAN_DATABASE_PASSWORD'] %>
-#  dsn: dbi:Pg:dbname=quran
+
