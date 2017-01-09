@@ -31,7 +31,7 @@ gem 'turbolinks', '~> 5'
 #Admin panel
 gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
-gem 'paper_trail'
+gem 'paper_trail', '~> 6.0.2'
 
 #authentication
 gem 'devise'
@@ -43,6 +43,9 @@ gem "sentry-raven"
 
 # Generate embed code and get metadata of video etc
 gem 'video_info'
+
+#github.com/JeremyGeros/differ
+gem 'differ'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

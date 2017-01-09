@@ -92,6 +92,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    differ (0.1.2)
     erubis (2.7.0)
     execjs (2.7.0)
     faraday (0.10.1)
@@ -253,11 +254,12 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  differ
   inherited_resources!
   jquery-rails
   listen (~> 3.0.5)
   newrelic_rpm
-  paper_trail
+  paper_trail (~> 6.0.2)
   pg
   pry-byebug
   pry-rails
