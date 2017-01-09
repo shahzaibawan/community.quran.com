@@ -9,8 +9,20 @@ ActiveAdmin.register MediaContent do
       row :url
 
       row :embed_text do |resource|
-       resource.embed_text.to_s.html_safe
+       p resource.embed_text.to_s.html_safe
       end
     end
+  end
+
+  index do
+    column :id
+    column :author_name
+    column :resource_content
+    column :language
+    actions
+  end
+
+  def scoped_collection
+    super.includes :language, :resource_content
   end
 end

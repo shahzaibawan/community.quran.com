@@ -36,6 +36,8 @@ gem 'paper_trail'
 #authentication
 gem 'devise'
 
+gem 'newrelic_rpm'
+
 #exception tracking
 gem "sentry-raven"
 
