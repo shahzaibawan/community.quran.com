@@ -7,7 +7,7 @@ ActiveAdmin.register ResourceContent do
   filter :resource_type, as: :select, collection: ResourceContent.collection_for_resource_type
   filter :sub_type,  as: :select, collection: ResourceContent.collection_for_sub_type
 
-  action_item only: :show do
+  action_item :show, only: :show do
     link_to approve_admin_resource_content_path(resource), method: :put, data: {confirm: "Are you sure?"} do
       resource.approved? ? "Un Approve!" : "Approve!"
     end
