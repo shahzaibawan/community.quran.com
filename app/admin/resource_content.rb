@@ -26,4 +26,8 @@ ActiveAdmin.register ResourceContent do
     column :sub_type
     actions
   end
+
+  show do
+
+  end
 end

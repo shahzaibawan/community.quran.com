@@ -131,6 +131,7 @@ GEM
     minitest (5.10.1)
     multipart-post (2.0.0)
     net_http_timeout_errors (0.3.0)
+    newrelic_rpm (3.17.2.327)
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
@@ -255,6 +256,7 @@ DEPENDENCIES
   inherited_resources!
   jquery-rails
   listen (~> 3.0.5)
+  newrelic_rpm
   paper_trail
   pg
   pry-byebug
