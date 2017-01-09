@@ -29,6 +29,7 @@ ActiveAdmin.register ChapterInfo do
       row :text do |resource| resource.text.to_s.html_safe end
       row :short_text
       row :language
+      row :resource_content
     end
   end
 end
