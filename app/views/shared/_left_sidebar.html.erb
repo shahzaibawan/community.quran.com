@@ -1,0 +1,40 @@
+<div class="col-md-12 col-xs-12" id="header_sidebar">
+</div>
+<div class="col-md-2 disable-mobile left-sidebar">
+  <ul>
+    <li class="widget widget-btn">
+      <button type="button" data-toggle="modal" class="action ask-question">
+        <i class="fa fa-plus"></i> ASK A QUESTION                </button>
+    </li><!-- END BUTTON MODAL QUESTION -->
+    <li class="widget widget-menus">
+      <div class="menu-left-menu-container"><ul id="menu-left-menu-1" class="menu">
+        <li class="fa-question-circle menu-item menu-item-type-custom menu-item-object-custom menu-item-1765">
+          <%= link_to root_path do %>
+              <i class="fa fa-question-circle"></i>Questions
+          <% end %>
+        </li>
+        <li class="fa-tags menu-item menu-item-type-post_type menu-item-object-page menu-item-183 <%= 'active' if controller_name == "tags" %>">
+          <%= link_to tags_path do %>
+              <i class="fa fa-tags"></i>Tags
+          <% end %>
+        </li>
+        <li class="fa-trophy menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="#_"><i class="fa fa-trophy"></i>Badges</a></li>
+        <li class="fa-th-list menu-item menu-item-type-post_type menu-item-object-page menu-item-1742">
+          <%= link_to categories_path do %>
+              <i class="fa fa-th-list"></i>Categories
+          <% end %>
+        </li>
+        <li class="fa-users menu-item menu-item-type-post_type menu-item-object-page menu-item-1743">
+          <%= link_to users_path do %>
+              <i class="fa fa-users"></i>Users
+          <% end %>
+        </li>
+
+      </ul></div>            </li><!-- END LEFT MENU -->
+  </ul>
+  <div class="clearfix"></div>
+  <div class="copyright">
+    &copy;2017  <br>
+    <a href="http://qaengine.enginethemes.com/term/">Terms & Privacy</a>
+  </div>
+</div>

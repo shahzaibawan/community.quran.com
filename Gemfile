@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+#ruby '2.3.1'
+ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.1'
@@ -20,6 +21,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+
+gem "font-awesome-rails"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -39,7 +42,7 @@ gem 'devise'
 gem 'newrelic_rpm'
 
 #exception tracking
-gem "sentry-raven"
+#gem "sentry-raven"
 
 # Generate embed code and get metadata of video etc
 gem 'video_info'

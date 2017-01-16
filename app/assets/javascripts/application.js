@@ -13,3 +13,73 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require turbolinks
+//= require jquery-migrate.min
+//= require plupload.full.min
+//= require html5.js
+//= require underscore.min
+//= require backbone.min
+//= require marionette
+//= require appengine
+//= require functions
+//= require front
+//= require pumping
+//= require jquery.plugin.min
+//= require jquery.countdown.min
+//= require core.min
+//= require widget.min
+//= require mouse.min
+//= require draggable.min
+//= require slider.min
+//= require jquery.ui.touch-punch
+//= require iris.min
+//= require poll
+//= require bootstrap.min
+//= require modernizr
+//= require jquery.simple-text-rotator.min
+//= require jquery.validate.min
+//= require position.min
+//= require menu.min
+//= require wp-a11y.min
+//= require autocomplete.min
+//= require heartbeat.min
+//= require waypoints.min
+//= require waypoints-sticky
+//= require chosen
+//= require classie
+//= require scripts
+//= require moment.min
+//= require bootstrap-datetimepicker.min
+//= require colorpicker
+//= require jquery.mCustomScrollbar.concat.min
+//= require main
+//= require wp-embed.min
+//= require utils.min
+//= require editor.min
+//= require wplink.min
+//= require tinymce.min
+//= require plugin.min
+//= require wp-langs-en.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

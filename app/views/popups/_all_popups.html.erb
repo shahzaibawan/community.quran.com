@@ -1,0 +1,164 @@
+<!-- MODAL LOGIN / REGISTER -->
+<div class="modal fade modal-submit-questions" id="login_register" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title modal-title-sign-in" id="myModalLabel">Sign In</h4>
+      </div>
+      <div class="modal-body">
+        <form id="signin_form" class="form_modal_style">
+          <label for="username">
+            Username or Email					</label>
+          <input type="text" class="email_user"  name="username" id="username" />
+
+          <label for="password">
+            Password					</label>
+          <input type="password" class="password_user" id="password" name="password">
+          <div class="clearfix"></div>
+          <input type="submit" name="submit" value="Sign in" class="btn-submit">
+          <a href="javascript:void(0)" class="link_forgot_pass">Forgot password</a>
+          <div class="submit-block">
+            <a href="javascript:void(0)" class="link_sign_up">Sign up here</a><span>or sign in with</span>
+
+            <ul class="social-icon clearfix">
+              <!-- google plus login -->
+              <!-- twitter plus login -->
+              <!-- facebook plus login -->
+            </ul>
+          </div>
+
+        </form>
+
+        <form id="signup_form" class="form_modal_style">
+          <label for="username">
+            Username					</label>
+          <input type="text" class="name_user" name="username" id="username" />
+
+          <label for="email">
+            Email					</label>
+          <input type="text" class="email_user" name="email" id="email" />
+
+          <label for="password1">
+            Password					</label>
+          <input type="password" class="password_user_signup" id="password1" name="password" />
+
+          <label for="re_password">
+            Retype Password					</label>
+          <input type="password" class="repeat_password_user_signup" id="re_password" name="re_password" />
+
+
+          <div class="clearfix"></div>
+          <div class="gg-captcha">
+          </div>
+          <input type="submit" name="submit" value="Sign up" class="btn-submit">
+          <a href="javascript:void(0)" class="link_sign_in">Sign in</a>
+
+          <div class="clearfix"></div>
+
+          <p class="policy-sign-up">
+            By clicking "Sign up" you indicate that you have read and agree to the <a target="_blank" href="http://qaengine.enginethemes.com/privacy/">privacy policy</a> and <a target="_blank" href="http://qaengine.enginethemes.com/term/">terms of service.</a>					</p>
+        </form>
+
+        <form id="forgotpass_form" class="form_modal_style collapse">
+          <label>Enter your email here</label>
+          <input type="text" class="name_user" name="email" id="email" />
+          <input type="submit" name="submit" value="Send" class="btn-submit">
+          <a href="javascript:void(0)" class="return_link_sign_in">Sign in</a>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>	<!-- MODAL LOGIN / REGISTER -->
+
+<!-- MODAL RESET PASSWORD -->
+<div class="modal fade modal-submit-questions" id="reset_password" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title modal-title-sign-in" id="myModalLabel">Reset Password</h4>
+      </div>
+      <div class="modal-body">
+
+        <form id="resetpass_form" class="form_modal_style">
+          <input type="hidden" id="user_login" name="user_login" value="" />
+          <input type="hidden" id="user_key" name="user_key" value="">
+          <label>Enter your new password here</label>
+          <input type="password" class="name_user" name="new_password" id="new_password" />
+          <input type="password" class="name_user" name="re_new_password" id="re_new_password" />
+          <input type="submit" name="submit" value="Reset" class="btn-submit">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>	<!-- MODAL RESET PASSWORD -->
+
+<!-- MODAL EDIT PROFILE / CHANGE PASS -->
+<div class="modal fade modal-edit-profile" id="edit_profile" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title" id="myModalLabel">Edit Profile</h4>
+      </div>
+      <div class="modal-body">
+        <div class="author-edit" id="user_avatar_container">
+                    <span class="author-avatar image" id="user_avatar_thumbnail">
+                                            </span>
+          <div class="edit-info-avatar">
+            <a href="javascript:void(0);" class="upload-avatar-btn" id="user_avatar_browse_button">
+              Upload New Avatar                        </a>
+            <a href="javascript:void(0);" class="link_change_password">Change Password</a>
+            <a href="javascript:void(0);" class="link_change_profile">Change Profile</a>
+          </div>
+          <span class="et_ajaxnonce" id="750356c220"></span>
+        </div>
+
+        <form id="submit_edit_profile" class="form_modal_style edit_profile_form">
+          <label>Full name</label>
+          <input type="text" class="submit-input" maxlength="40" id="display_name" name="display_name">
+
+          <label>Location</label>
+          <input type="text" class="submit-input" maxlength="40" id="user_location" name="user_location">
+
+          <label>Facebook</label>
+          <input type="text" class="submit-input" maxlength="80" id="user_facebook" name="user_facebook">
+
+          <label>Twitter</label>
+          <input type="text" class="submit-input" maxlength="80" id="user_twitter" name="user_twitter">
+
+          <label>Google+</label>
+          <input type="text" class="submit-input" maxlength="80" id="user_gplus" name="user_gplus">
+
+          <label>Email</label>
+          <input type="text" class="submit-input" id="user_email" name="user_email">
+
+          <div class="clearfix"></div>
+
+          <label>About me</label>
+          <textarea  maxlength="350" class="submit-textarea" id="description" name="description"></textarea>
+          <input type="checkbox" name="show_email"  id="show_email" />
+          <label for="show_email" class="checkbox-email">
+            Make this email public.                        </label>
+          <div class="clearfix"></div>
+
+          <input type="submit" name="submit" value="Update Profile" class="btn-submit update_profile">
+        </form>
+
+        <form id="submit_edit_password" class="form_modal_style edit_password_form">
+          <label>Old Password</label>
+          <input type="password" class="submit-input" id="old_password" name="old_password">
+          <label>New Password</label>
+          <input type="text" class="submit-input input-password" id="new_password1" name="new_password">
+          <label>Repeat New Password</label>
+          <input type="text" class="submit-input input-password" id="re_password" name="re_password">
+          <input type="submit" name="submit" value="Change Password" class="btn-submit update_profile">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>	<!-- MODAL UPLOAD IMAGE -->
