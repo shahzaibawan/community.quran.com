@@ -4,11 +4,41 @@
     <title>QuranComCommunity</title>
     <%= csrf_meta_tags %>
 
+    <%= render "shared/header_scripts" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="home page-template page-template-page-questions page-template-page-questions-php page page-id-12 cbp-spmenu-push">
+
+  <%= render "shared/top_navs" %>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <%= render "shared/header" %>
+
+      <%= render "shared/left_sidebar" %>
+      <!-- END LEFT-SIDEBAR -->
+    <div itemtype="http://schema.org/ItemList" class="col-md-8 main-content">
+      <link itemprop="url" href="http://qaengine.enginethemes.com" style="display: none;"/>
+      <div class="clearfix"></div>
+
+      <%= yield %>
+
+      <div class="clearfix"></div>
+    </div>
+
+      <%= render "shared/right_sidebar" %>
+    </div><!-- END ROW -->
+  </div>
+
+
+
+
+
+  <%= render "popups/login" %>
+  <%= render "shared/footer_scripts" %>
   </body>
 </html>
